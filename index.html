@@ -11,13 +11,16 @@
 </head>
 
 <body>
-    <div>
-        <input id="input-1" type="text" name="">
-        <input id="input-2" type="text" name="">
-        <input type="button" value="Add">
-        <span id="calculation-answer"></span>
+    <div class="calc-container">
+        <input class="text-input" id="input-1" type="text" name="">
+        <select class="calc-options" name="" id="calc-select">
+            <option value="add">add</option>
+        </select>
+        <input class="text-input" id="input-2" type="text" name="">
+        <input class="calculate-button" type="button" value="  =  ">
+        <span class="answer-text" id="calculation-answer"></span>
     </div>
- 
+    <script type="module" src="./calculations.js"></script> 
     <script type="module" src="./app.js"></script>
 </body>
 
