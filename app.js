@@ -1,5 +1,5 @@
 // import functions 
-import { add, subtract, multiply, divide, intDiv } from './calculations.js';
+import { add, subtract, multiply, divide, modulo, intDiv } from './calculations.js';
 // grab DOM elements
 const input1 = document.getElementById('input-1');
 const calcSelect = document.getElementById('calc-select');
@@ -20,6 +20,7 @@ buttonCalc.addEventListener('click', ()=>{
     const subtractResult = subtract(value1, value2);
     const multiplyResult = multiply(value1, value2);
     const divideResult = divide(value1, value2);
+    const moduloResult = modulo(value1, value2);
     const intDivResult = intDiv(value1, value2);
     // update DOM to reflect the new state
     if (calcSelect.value === 'add') {
@@ -30,6 +31,8 @@ buttonCalc.addEventListener('click', ()=>{
         answer.textContent = multiplyResult;
     } else if (calcSelect.value === 'divide') {
         answer.textContent = divideResult;
+    } else if (calcSelect.value === 'modulo') {
+        answer.textContent = moduloResult;
     } else if (calcSelect.value === 'int-div') {
         answer.textContent = intDivResult;
     } else {

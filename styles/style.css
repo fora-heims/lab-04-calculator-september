@@ -35,10 +35,12 @@ h1 {
 }
 
 .text-input {
+    color: maroon;
+    text-align: center;
     border: pink solid 6px;
     border-radius: 6px;
     height: 40px;
-    width: 16.6vw;
+    width: 12vw;
     font-weight: 700;
     font-family: monospace;
 }
